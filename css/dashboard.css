@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destaques {
+    padding: 20px;
+    background-color: #e0b0ff; /* Roxo claro */
+    border-radius: 6px;
+}
+
+.premium-destaque, .como-funciona-destaque {
+    padding: 20px;
+    background-color: #ff9800; /* Laranja */
+    color: #fff;
+    border-radius: 6px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.destaques h2 {
+    color: #fff;
+}
+
+.premium-destaque h2, .como-funciona-destaque h2 {
+    color: #fff;
+}
+
+/* Estilos para a seção "Eventos em Destaque" */
+.botoes-destaque {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.botoes-destaque button {
+    padding: 10px 15px;
+    border: 2px solid #d8a2ff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.botoes-destaque button:hover {
+    background-color: #d8a2ff;
+    color: #fff;
+}
+
+.confirmacao {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.confirmar-presenca-texto {
+    background-color: #fff8e1; /* Amarelo bem claro */
+    color: #a07800; /* Marrom amarelado */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirmar-presenca-texto:hover {
+    background-color: #fdd835; /* Amarelo um pouco mais forte */
+}
+
+.confirmacao input[type="text"],
+.confirmacao input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.confirmar-presenca-azul {
+    background-color: #3f51b5; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirmar-presenca-azul:hover {
+    background-color: #303f9f; /* Azul mais escuro */
+}
+
+/* Estilos para os botões das seções laranja (ICONES QUADRADOS) */
+.botoes-premium, .botoes-funciona {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botoes-premium button, .botoes-funciona button {
+    background-color: rgba(255, 255, 255, 0.15); /* Fundo branco bem transparente */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.botoes-premium button:hover, .botoes-funciona button:hover {
+    background-color: rgba(255, 255, 255, 0.25); /* Um pouco mais escuro no hover */
+}
+
+.icone-qr, .icone-lista, .icone-envelope, .icone-calendario, .icone-pessoas, .icone-check {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco semi-transparente para os ícones */
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em; /* Aumentei o tamanho da fonte para os símbolos */
+    color: #333; /* Cor dos símbolos */
+}
+
+/* Simbolizando os ícones com caracteres Unicode (você pode substituir por imagens) */
+.icone-qr::before {
+    content: "🟆"; /* Quadrado com ponto no meio (aproximado) */
+}
+
+.icone-lista::before {
+    content: "☰"; /* Três linhas (lista) */
+}
+
+.icone-envelope::before {
+    content: "✉"; /* Envelope */
+}
+
+.icone-calendario::before {
+    content: "📅"; /* Calendário */
+}
+
+.icone-pessoas::before {
+    content: "👥"; /* Silhuetas de pessoas */
+}
+
+.icone-check::before {
+    content: "✔"; /* Checkmark */
+}

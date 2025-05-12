@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f0f5;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #c7c6fd;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-bar h2 {
+    margin: 0;
+    color: #333;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10%;
+}
+
+.header-actions h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.add-btn {
+    padding: 10px 25px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background-color: #0052cc;
+}
+
+#pesquisa {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+table {
+    margin: 0 auto 50px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+table thead {
+    background-color: #f9f9f9;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table th {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botões de status */
+.btn-status {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+.confirmado {
+    background-color: #00b894;
+}
+
+.pendente {
+    background-color: #fdcb6e;
+}
+
+.recusado {
+    background-color: #d63031;
+}
+
+.btn-acoes {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.editar {
+    background-color: #0984e3;
+}
+
+.excluir {
+    background-color: #d63031;
+}
