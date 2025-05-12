@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Convidados</title>
+    <link rel="stylesheet" href="css/convidados.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <h2>Gerenciar Convidados</h2>
+    </div>
+
+    <div class="header-actions">
+        <h3>Gerenciar Convidados</h3>
+        <button class="add-btn" onclick="adicionarConvidado()">Adicionar Convidado</button>
+    </div>
+
+    <input type="text" id="pesquisa" placeholder="Pesquisar por nome ou grupo">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Grupo</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="lista-convidados">
+            <tr>
+                <td>Maria Souza</td>
+                <td>Família</td>
+                <td>
+                    <button class="btn-status confirmado">Confirmado</button>
+                </td>
+                <td>
+                    <button class="btn-acoes editar">Editar</button>
+                    <button class="btn-acoes excluir">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>João Pedro</td>
+                <td>Amigos</td>
+                <td>
+                    <button class="btn-status pendente">Pendente</button>
+                </td>
+                <td>
+                    <button class="btn-acoes editar">Editar</button>
+                    <button class="btn-acoes excluir">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/convidados.js"></script>
+</body>
+</html>
