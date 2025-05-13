@@ -1,172 +1,202 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.destaques {
-    padding: 20px;
-    background-color: #e0b0ff; /* Roxo claro */
-    border-radius: 6px;
-}
-
-.premium-destaque, .como-funciona-destaque {
-    padding: 20px;
-    background-color: #ff9800; /* Laranja */
-    color: #fff;
-    border-radius: 6px;
-}
-
-h2 {
-    margin-top: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: ef;
     color: #333;
-}
-
-.destaques h2 {
-    color: #fff;
-}
-
-.premium-destaque h2, .como-funciona-destaque h2 {
-    color: #fff;
-}
-
-/* Estilos para a seção "Eventos em Destaque" */
-.botoes-destaque {
+  }
+  
+  /* Retângulos grandes do topo do Dashboard */
+  .dashboard-container {
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.botoes-destaque button {
-    padding: 10px 15px;
-    border: 2px solid #d8a2ff;
-    border-radius: 20px;
-    background-color: transparent;
-    color: #333;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: bold;
-}
-
-.botoes-destaque button:hover {
-    background-color: #d8a2ff;
-    color: #fff;
-}
-
-.confirmacao {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr auto;
-    gap: 10px;
+    justify-content: space-around;
     align-items: center;
-}
-
-.confirmar-presenca-texto {
-    background-color: #fff8e1; /* Amarelo bem claro */
-    color: #a07800; /* Marrom amarelado */
-    border: none;
-    border-radius: 20px;
-    padding: 10px 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.confirmar-presenca-texto:hover {
-    background-color: #fdd835; /* Amarelo um pouco mais forte */
-}
-
-.confirmacao input[type="text"],
-.confirmacao input[type="email"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.confirmar-presenca-azul {
-    background-color: #3f51b5; /* Azul */
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.confirmar-presenca-azul:hover {
-    background-color: #303f9f; /* Azul mais escuro */
-}
-
-/* Estilos para os botões das seções laranja (ICONES QUADRADOS) */
-.botoes-premium, .botoes-funciona {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.botoes-premium button, .botoes-funciona button {
-    background-color: rgba(255, 255, 255, 0.15); /* Fundo branco bem transparente */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  .dashboard-container .card {
+    width: 350px;
+    height: 153px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: bold;
-    text-align: left;
-}
-
-.botoes-premium button:hover, .botoes-funciona button:hover {
-    background-color: rgba(255, 255, 255, 0.25); /* Um pouco mais escuro no hover */
-}
-
-.icone-qr, .icone-lista, .icone-envelope, .icone-calendario, .icone-pessoas, .icone-check {
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco semi-transparente para os ícones */
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.2em; /* Aumentei o tamanho da fonte para os símbolos */
-    color: #333; /* Cor dos símbolos */
-}
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  
+  .laranja {
+    background-color: orange;
+    color: #fff;
+  }
+  
+  .laranja h2 {
+    color: #fff;
+  }
+  
+  .botoes-destaque {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  
+  .botoes-destaque button {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .botoes-destaque button:hover {
+    background: #fff;
+    color: #cba3ff;
+  }
+  
+  .confirmacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 12px;
+  }
+  
+  .confirmacao input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .btn-amarelo {
+    background: #fdd835;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .btn-azul {
+    background: #3f51b5;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .botoes-icones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .botoes-icones button {
+    background: rgba(28, 173, 28, 0.25);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 150px;
+  }
+  
+  .botoes-icones button .icone {
+    background: rgba(12, 12, 10, 0.205);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 18px;
+  }
+  
+  .botoes-icones button:hover {
+    background: rgba(177, 209, 241, 0.973);
+  }
+  
+  /* Retângulo do título "Eventos em Destaque" */
+  .eventos-destaque {
+    background-color: #b0cde9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Retângulo da confirmação de presença */
+  .confirmacao-presenca {
+    background-color: #C7FFEB;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para os inputs dentro da confirmação de presença */
+  .confirmacao-presenca input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Estilo para o botão "Confirmar" */
+  .confirmacao-presenca button {
+    background-color: #260EFB;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Efeito hover no botão */
+  .confirmacao-presenca button:hover {
+    background-color: #1a09c4;
+  }
+  h3 {
+    background-color: yellow;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    color: #333;
+    margin-bottom: 20px;
 
-/* Simbolizando os ícones com caracteres Unicode (você pode substituir por imagens) */
-.icone-qr::before {
-    content: "🟆"; /* Quadrado com ponto no meio (aproximado) */
-}
-
-.icone-lista::before {
-    content: "☰"; /* Três linhas (lista) */
-}
-
-.icone-envelope::before {
-    content: "✉"; /* Envelope */
-}
-
-.icone-calendario::before {
-    content: "📅"; /* Calendário */
-}
-
-.icone-pessoas::before {
-    content: "👥"; /* Silhuetas de pessoas */
-}
-
-.icone-check::before {
-    content: "✔"; /* Checkmark */
-}
+  }
+  
