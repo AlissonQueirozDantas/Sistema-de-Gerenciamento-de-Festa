@@ -2,32 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Criar Novo Evento</title>
-    <link rel="stylesheet" href="css/criar-evento.css">
+    <title>Criar Evento</title>
+    <link rel="stylesheet" href="/css/criar-eventos.css">
 </head>
 <body>
-    <h2>Criar Novo Evento</h2>
 
-    <form id="form-evento">
-        <label>Nome do Evento:</label>
-        <input type="text" id="nome" required>
+    <div class="container">
+        <div class="header">
+            <h2>Criar evento</h2>
+        </div>
 
-        <label>Data:</label>
-        <input type="date" id="data" required>
+        <form id="form-evento">
+            <label for="nome">Nome do evento</label>
+            <input type="text" id="nome" placeholder="Digite o nome do evento" required>
 
-        <label>Local:</label>
-        <input type="text" id="local" required>
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" placeholder="Informe detalhes..." required></textarea>
 
-        <label>Tipo:</label>
-        <select id="tipo" required>
-            <option value="">Selecione</option>
-            <option value="Aniversário">Aniversário</option>
-            <option value="Show">Show</option>
-            <option value="Baile">Baile</option>
-        </select>
+            <div class="row">
+                <div>
+                    <label for="data">Data</label>
+                    <input type="date" id="data" required>
+                </div>
+                <div>
+                    <label for="horario">Horário</label>
+                    <input type="time" id="horario" required>
+                </div>
+            </div>
 
-        <button type="submit">Cadastrar Evento</button>
-    </form>
+            <label for="local">Local</label>
+            <input type="text" id="local" placeholder="Informe o local do evento" required>
+
+            <div class="button-group">
+                <button type="button" class="btn-cancelar">Cancelar</button>
+                <button type="submit" class="btn-criar">Criar evento</button>
+            </div>
+        </form>
+    </div>
 
     <script src="js/criar-evento.js"></script>
 </body>
