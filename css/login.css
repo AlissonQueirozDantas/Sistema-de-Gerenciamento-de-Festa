@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #f2f3f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,51 +9,75 @@ body {
 }
 
 .login-container {
-    background-color: #fff;
+    background: white;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+    border-radius: 10px;
     width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-container h2 {
-    margin-bottom: 10px;
+.header-bar {
+    background-color: #c6c6f5;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header-bar h2 {
+    margin: 0;
     color: #333;
 }
 
-.login-container p {
-    margin-bottom: 20px;
-    color: #666;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.login-container input {
-    width: 100%;
+form input {
+    width: 90%;
     padding: 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
+    font-size: 14px;
 }
 
-.login-container button[type="submit"] {
-    width: 100%;
+form button {
+    width: 94%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #217aff;
+    color: white;
     border: none;
-    color: #fff;
     border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.login-container button[type="submit"]:hover {
-    background-color: #0056b3;
+form button:hover {
+    background-color: #005ce6;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    margin: 10px 0 20px 18px;
+    color: #217aff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
 .social-login {
     margin-top: 20px;
 }
 
-.social-login button {
+.social-login a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +88,14 @@ body {
     border-radius: 6px;
     margin-bottom: 10px;
     cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social-login a img {
+    width: 20px;
+    height: 20px;
 }
 
 .facebook-btn {
@@ -71,12 +103,33 @@ body {
     color: #fff;
 }
 
+.facebook-btn:hover {
+    background-color: rgb(44, 5, 107);
+}
+
 .google-btn {
-    background-color: #db4437;
+    background-color: #bcadf0;
     color: #fff;
+}
+
+.google-btn:hover {
+    background-color: #1b043f;
 }
 
 .social-login img {
     width: 20px;
     height: 20px;
 }
+.forgot-password {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+

@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Sistema de Gerenciamento de Festas</h2>
+        <div class="header-bar">
+            <h2>Sistema de Gerenciamento de Festas</h2>
+        </div>
+        
         <p>Efetue seu login ou cadastre-se.</p>
 
         <form id="login-form">
@@ -16,16 +19,22 @@
             <button type="submit">Acessar</button>
         </form>
 
-        <a href="#">Esqueceu sua senha?</a>
+        <!-- Link de esqueci minha senha -->
+        <a href="recuperar-senha.html" class="forgot-password">Esqueceu sua senha?</a>
+
 
         <div class="social-login">
             <p>Faça login com:</p>
-            <button class="facebook-btn">
-                <img src="img/facebook-icon.png" alt="Facebook"> Facebook
-            </button>
-            <button class="google-btn">
-                <img src="img/google-icon.png" alt="Google"> Google
-            </button>
+            <a href="https://www.facebook.com" target="_blank">
+                <button type="button" class="facebook-btn">
+                    <img src="img/facebook-icon.png" alt="Facebook"> Facebook
+                </button>
+            </a>
+            <a href="https://google.com" target="_blank">
+                <button type="button" class="google-btn">
+                    <img src="img/google-icon.png" alt="Google"> Google
+                </button>
+            </a>
         </div>
     </div>
 
